@@ -1,6 +1,5 @@
 'use client'
 import { cn } from '@/lib/utils'
-
 import { Field, FieldDescription, FieldGroup } from '@/components/ui/field'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -26,9 +25,9 @@ export function VerifyAccount({
   return (
     <form className={cn('flex flex-col gap-6', className)} {...props}>
       <FieldGroup>
-        <div className='flex flex-col items-center gap-1 text-center'>
+        <div className='flex flex-col items-center gap-1 text-center '>
           {' '}
-          <h1 className='text-3xl md:text-5xl text-center font-bold mb-3'>
+          <h1 className='text-3xl md:text-5xl text-center font-bold mb-3 '>
             Verify Account
           </h1>
           <p className='text-muted-foreground text-sm text-balance '>
@@ -44,8 +43,8 @@ export function VerifyAccount({
           <Input type='code' id='code' placeholder='4 Digit Code' />
         </div>
 
-        <Field className='flex flex-col items-center justify-end md:justify-center min-h-[55vh] md:min-h-0 w-full'>
-          <FieldDescription className='text-[#475569] text-sm text-center min-h-[30vh] md:min-h-0'>
+        <Field className='flex flex-col items-center justify-end md:justify-center min-h-[55vh] md:min-h-0 w-full mt-30'>
+          <FieldDescription className='text-[#475569] text-sm text-center min-h-[30vh] md:min-h-0 '>
             Didn&apos;t receive the code?{' '}
             <a href='#' className='text-[#94A3B8] underline'>
               Resend Code
@@ -57,7 +56,7 @@ export function VerifyAccount({
 
           <Button
             type='submit'
-            className='bg-[#2B8761] rounded-full w-full md:w-auto'
+            className='bg-[#2B8761] rounded-full w-full md:w-auto '
           >
             Verify
           </Button>
